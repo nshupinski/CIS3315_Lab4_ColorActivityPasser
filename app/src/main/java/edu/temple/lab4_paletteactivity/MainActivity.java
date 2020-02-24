@@ -40,6 +40,7 @@ public class MainActivity extends AppCompatActivity {
                 // Open Activity 2
                 if (count > 0) {
                     Intent intent = new Intent(MainActivity.this, CanvasActivity.class);
+                    intent.putExtra("selectedColor", colors[position]);
                     startActivity(intent);
                 }
                 count++;
