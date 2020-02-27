@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Laboratorio4_PaletaActividad</string>
+
+    <string-array
+        name="color_string_array">
+        <item name = "red">rojo</item>
+        <item name = "blue">azul</item>
+        <item name = "green">verde</item>
+        <item name = "yellow">amarilla</item>
+        <item name = "gray">gris</item>
+        <item name = "cyan">cian</item>
+        <item name = "magenta">magenta</item>
+        <item name = "black">negro</item>
+        <item name = "lightGray">grisclaro</item>
+        <item name = "white">blanca</item>
+
+    </string-array>
+</resources>

@@ -1,6 +1,7 @@
 package edu.temple.lab4_paletteactivity;
 
 import android.content.Context;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.view.View;
 import android.view.ViewGroup;
@@ -37,8 +38,12 @@ public class ColorAdapter extends BaseAdapter {
 
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
+
+        Resources res = context.getResources();
+        String[] resColorArray = res.getStringArray(R.array.color_string_array);
+
         TextView text = new TextView(context);
-        text.setText(colors[position]);
+        text.setText(resColorArray[position]);
 
         return text;
     }
