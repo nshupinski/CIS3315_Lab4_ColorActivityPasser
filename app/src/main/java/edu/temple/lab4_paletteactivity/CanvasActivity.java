@@ -13,6 +13,8 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.content.res.Resources;
 
+import java.util.jar.Attributes;
+
 public class CanvasActivity extends AppCompatActivity {
 
     ConstraintLayout layout;
@@ -38,7 +40,8 @@ public class CanvasActivity extends AppCompatActivity {
         String[] resColorArray = res.getStringArray(R.array.color_string_array);
 
         // Set background and textView according to intent data
-        layout.setBackgroundColor(Color.parseColor(resColorArray[colorLocation]));
+        layout.setBackgroundColor(Color.parseColor(MainActivity.colors[colorLocation]));
+
         txt.setText(resColorArray[colorLocation]);
     }
 }

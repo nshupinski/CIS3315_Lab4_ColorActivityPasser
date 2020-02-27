@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     public static ConstraintLayout myLayout;
     Spinner spinner;
 
-    String[] colors = new String[] {"red", "blue", "green", "yellow", "gray", "cyan", "magenta", "black", "lightGray", "white"};
+    public static String[] colors = new String[] {"red", "blue", "green", "yellow", "gray", "cyan", "magenta", "black", "lightGray", "white"};
 
 
     @Override
