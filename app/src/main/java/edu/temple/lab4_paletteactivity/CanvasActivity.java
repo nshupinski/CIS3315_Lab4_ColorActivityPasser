@@ -3,6 +3,7 @@ package edu.temple.lab4_paletteactivity;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.constraintlayout.widget.ConstraintLayout;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
@@ -10,6 +11,7 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.content.res.Resources;
 
 public class CanvasActivity extends AppCompatActivity {
 
@@ -29,10 +31,14 @@ public class CanvasActivity extends AppCompatActivity {
 
         // Retrieve intent data
         Intent intent = getIntent();
-        String color = intent.getStringExtra("selectedColor");
+        int colorLocation = intent.getIntExtra("selectedColor", 0);
+
+        // Retrieve a string-array resource
+        Resources res = getResources();
+        String[] resColorArray = res.getStringArray(R.array.color_string_array);
 
         // Set background and textView according to intent data
-        layout.setBackgroundColor(Color.parseColor(color));
-        txt.setText(color);
+        layout.setBackgroundColor(Color.parseColor(resColorArray[colorLocation]));
+        txt.setText(resColorArray[colorLocation]);
     }
 }
