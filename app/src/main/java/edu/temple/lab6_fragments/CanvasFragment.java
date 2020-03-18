@@ -14,12 +14,12 @@ import android.view.ViewGroup;
 /**
  * A simple {@link Fragment} subclass.
  * Activities that contain this fragment must implement the
- * {@link PaletteFragment.OnFragmentInteractionListener} interface
+ * {@link CanvasFragment.OnFragmentInteractionListener} interface
  * to handle interaction events.
- * Use the {@link PaletteFragment#newInstance} factory method to
+ * Use the {@link CanvasFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class PaletteFragment extends Fragment {
+public class CanvasFragment extends Fragment {
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -31,7 +31,7 @@ public class PaletteFragment extends Fragment {
 
     private OnFragmentInteractionListener mListener;
 
-    public PaletteFragment() {
+    public CanvasFragment() {
         // Required empty public constructor
     }
 
@@ -41,11 +41,11 @@ public class PaletteFragment extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment PaletteFragment.
+     * @return A new instance of fragment CanvasFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static PaletteFragment newInstance(String param1, String param2) {
-        PaletteFragment fragment = new PaletteFragment();
+    public static CanvasFragment newInstance(String param1, String param2) {
+        CanvasFragment fragment = new CanvasFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -59,8 +59,6 @@ public class PaletteFragment extends Fragment {
         if (getArguments() != null) {
             mParam1 = getArguments().getString(ARG_PARAM1);
             mParam2 = getArguments().getString(ARG_PARAM2);
-
-
         }
     }
 
@@ -68,7 +66,7 @@ public class PaletteFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_palette, container, false);
+        return inflater.inflate(R.layout.fragment_canvas, container, false);
     }
 
     // TODO: Rename method, update argument and hook method into UI event
