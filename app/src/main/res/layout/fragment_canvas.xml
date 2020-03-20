@@ -3,12 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CanvasFragment">
+    tools:context=".CanvasFragment"
+    android:visibility="visible"
+    android:id="@+id/canvas_layout">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/displayColor"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:text="Bibity Bop"
+        android:textAlignment="center"
+        android:textSize="40dp" />
 
 </FrameLayout>

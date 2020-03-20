@@ -2,15 +2,16 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/myLayout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
     <FrameLayout
+        android:id="@+id/fragment_container"
         android:name=".PaletteFragment"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/fragment_container">
+        android:layout_height="match_parent">
 
         <Spinner
             android:id="@+id/spinner"
@@ -19,6 +20,12 @@
             android:layout_marginLeft="40dp"
             android:layout_marginTop="100dp"
             android:gravity="center" />
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/canvas_container">
     </FrameLayout>
 
 </RelativeLayout>

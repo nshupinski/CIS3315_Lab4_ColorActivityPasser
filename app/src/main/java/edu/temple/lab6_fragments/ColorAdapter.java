@@ -11,7 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
-import edu.temple.lab6_fragments.R;
+//import edu.temple.lab6_fragments.R;
 
 public class ColorAdapter extends BaseAdapter {
 
